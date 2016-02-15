@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+      Rastreadores de Mosquito
+    </title>
+    <meta name="author" content="mrmrs">
+    <meta name="description" content="LINKS - CSS for better default link styles.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/links.css">
+    <style>
+      code { color: #777; }
+      body, html { margin: 0; padding: 0; color: #000; background-color: #FAFAC8; font-family: 'Lato', sans-serif; }
+      header { padding-left: 1em; padding-right: 1em; padding-top: 2em; }
+      main, footer  { padding: 1em; }
+      pre { overflow-y: auto; }
+      h1, h3 { font-weight: 100;  font-size: 16px; }
+      .thin { font-weight: 100;}
+      p { line-height: 1.6; }
+
+      .tc { text-align: center; }
+      .f1 { font-size: 24px; }
+      .f2 { font-size: 20px; }
+      .f3 { font-size: 16px; }
+
+
+      .ss { font-family: avenir, helvetica, arial, sans-serif; }
+      .title { text-transform: uppercase; letter-spacing: .2em; font-weight: 100; }
+
+
+      .g { max-width: 44em; margin: 0 auto; }
+      .bb { border-bottom: 1px dotted #666; padding-bottom: 2em; }
+      .bt { border-top: 1px dotted #666; padding-top: 2em; }
+      .man { margin: 0; }
+      .mt { margin-top: 4em; }
+
+      .pt1 { padding-top: 1em; }
+      .pt { padding-top: 2em; }
+      .pb { padding-bottom: 2em; }
+
+      .btn,.btn:link,.btn:visited {
+        text-decoration: none;
+        color: #222;
+        padding: .75em .75em;
+        font-family: avenir, helvetica, arial, sans-serif;
+        border: 1px solid;
+        border-radius: .3em;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: .13em;
+        transition: all .4s;
+        -webkit-transition: all .4s;
+      }
+
+      .btn:hover {
+        color: #999;
+        border-color: #999;
+      }
+
+      .btn--twitter { background-size: contain; padding-left: 2em!important; }
+      .btn--github {  background: red; height: 20px; width: 20px; }
+
+      .btn--twitter { background:url(img/info.svg) no-repeat 0 0; }
+      .btn--github  { background:url(img/geolocation.svg) no-repeat 0 0!important; }
+
+      a:hover i { opacity: 0.6; }
+
+      .mrs { margin-right: 1em; }
+
+      .geomicon { width: 1em; height: 1em; }
+      .geomicon--big { width: 2em; height: 2em; }
+
+    </style>
+
+    <script src="js/geomicons.js"></script>
+
+  </head>
+  <body>
+    <header class="bb">
+      <h1 class="f1 tc man pt">Rastreadores de Mosquito</h1>
+      <h2 class="tc title f3 pb">Vamos acabar com essa praga!</h2>
+      <div class="g tc pt1 pb">
+
+        <a href="#como-ajudar" class="mrs btn">
+          <i class="btn--github"> </i>
+          <span class="js-geomicon geomicon" data-icon="info"></span>
+          Como ajudar ?
+        </a>
+
+        <a href="/mapa/" class="btn">
+          <i class="btn--github"> </i>
+          <span class="js-geomicon geomicon" data-icon="geolocation"></span>
+          Mapa
+        </a>
+      </div>
+    </header>
+    <main class="g" id="como-ajudar">
+
+      <h2 class="title pt">Como ajudar?</h2>
+      <div class="pt">
+        <span class="js-geomicon geomicon--big" data-icon="camera"></span>
+        <p class="f1">Fotografe o provável foco de mosquito com a câmera do seu celular.</p>
+      </div>
+      <div class="pt">
+        <span class="js-geomicon geomicon--big" data-icon="tag"></span>
+        <p class="f1">Compartilhe a foto  no Instagram com a hashtag <em>#zikazero</em>.</p>
+      </div>
+      <div class="pt">
+        <span class="js-geomicon geomicon--big" data-icon="pin"></span>
+        <p class="f1">As autoridades responsáveis e a comunidade podem usar o <a href="mapa/">mapa</a> para localizar e acabar com o foco de mosquito.</p>
+      </div>
+
+    </main>
+    <footer class="bt">
+      <div class="g f2">
+        <p>Feito por <a href="http://nolram.com" title="Marlon Cabrera Oliveira" class="link">Marlon</a></p>
+        <small>licen&ccedil;a: MIT</small>
+      </div>
+    </footer>
+    <script>
+      var icons = document.querySelectorAll('.js-geomicon');
+      geomicons.inject(icons);
+    </script>
+  </body>
+</html>

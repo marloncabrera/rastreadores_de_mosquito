@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>
+      Mosquito Trackers
+    </title>
+    <meta name="author" content="Marlon Cabrera Oliveira">
+    <meta name="description" content="Mosquito trackers Aedes aegypt Zika Dengue Chikungunya Map">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/links.css">
+    <style>
+      code { color: #777; }
+      body, html { margin: 0; padding: 0; color: #000; background-color: #FAFAC8; font-family: 'Lato', sans-serif; }
+      header { padding-left: 1em; padding-right: 1em; padding-top: 2em; }
+      main, footer  { padding: 1em; }
+      pre { overflow-y: auto; }
+      h1, h3 { font-weight: 100;  font-size: 16px; }
+      .thin { font-weight: 100;}
+      p { line-height: 1.6; }
+
+      .tc { text-align: center; }
+      .f1 { font-size: 24px; }
+      .f2 { font-size: 20px; }
+      .f3 { font-size: 16px; }
+
+
+      .ss { font-family: avenir, helvetica, arial, sans-serif; }
+      .title { text-transform: uppercase; letter-spacing: .2em; font-weight: 100; }
+
+
+      .g { max-width: 44em; margin: 0 auto; }
+      .bb { border-bottom: 1px dotted #666; padding-bottom: 2em; }
+      .bt { border-top: 1px dotted #666; padding-top: 2em; }
+      .man { margin: 0; }
+      .mt { margin-top: 4em; }
+
+      .pt1 { padding-top: 1em; }
+      .pt { padding-top: 2em; }
+      .pb { padding-bottom: 2em; }
+
+      .btn,.btn:link,.btn:visited {
+        text-decoration: none;
+        color: #222;
+        padding: .75em .75em;
+        font-family: avenir, helvetica, arial, sans-serif;
+        border: 1px solid;
+        border-radius: .3em;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: .13em;
+        transition: all .4s;
+        -webkit-transition: all .4s;
+      }
+
+      .btn:hover {
+        color: #999;
+        border-color: #999;
+      }
+
+      .btn--twitter { background-size: contain; padding-left: 2em!important; }
+      .btn--github {  background: red; height: 20px; width: 20px; }
+
+      .btn--twitter { background:url(../img/info.svg) no-repeat 0 0; }
+      .btn--github  { background:url(../img/geolocation.svg) no-repeat 0 0!important; }
+
+      a:hover i { opacity: 0.6; }
+
+      .mrs { margin-right: 1em; }
+
+      .geomicon { width: 1em; height: 1em; }
+      .geomicon--big { width: 2em; height: 2em; }
+
+    </style>
+
+    <script src="../js/geomicons.js"></script>
+
+  </head>
+  <body>
+    <header class="bb">
+      <h1 class="f1 tc man pt">Mosquito Trackers</h1>
+      <h2 class="tc title f3 pb">Let's hunt down this plague!</h2>
+      <div class="g tc pt1 pb">
+
+        <a href="#how-to-help" class="mrs btn">
+          <i class="btn--github"> </i>
+          <span class="js-geomicon geomicon" data-icon="info"></span>
+          How to help ?
+        </a>
+
+        <a href="../mapa/" class="btn">
+          <i class="btn--github"> </i>
+          <span class="js-geomicon geomicon" data-icon="geolocation"></span>
+          Map
+        </a>
+      </div>
+    </header>
+    <main class="g" id="how-to-help">
+
+      <h2 class="title pt">How to help?</h2>
+      <div class="pt">
+        <span class="js-geomicon geomicon--big" data-icon="camera"></span>
+        <p class="f1">Take a photo of the mosquito spot with your cellphone.</p>
+      </div>
+      <div class="pt">
+        <span class="js-geomicon geomicon--big" data-icon="tag"></span>
+        <p class="f1">Share on Instagram with the hashtag <em>#zikazero</em>.</p>
+      </div>
+      <div class="pt">
+        <span class="js-geomicon geomicon--big" data-icon="pin"></span>
+        <p class="f1">Then the authorities and communities can use the <a href="../mapa/">map</a> track the mosquito spot.</p>
+      </div>
+
+    </main>
+    <footer class="bt">
+      <div class="g f2">
+        <p>Made by <a href="mailto:marlon.cabrera@gmail.com" class="link black db b f2-ns mts">Marlon</a></p>
+        <small>license: MIT</small>
+      </div>
+    </footer>
+    <script>
+      var icons = document.querySelectorAll('.js-geomicon');
+      geomicons.inject(icons);
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-73809265-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
